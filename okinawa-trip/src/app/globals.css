@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +6,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --darkgrey: #333333;
+  --white: #ffffff;
+  --brown: #bf8e68;
+  --light: #f0f0f0;
+  --sand: #ffdeaa;
+  --sea: #6cb1c9;
+  font-family: "Klee One";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,7 +23,8 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--sand);
+  background: linear-gradient(var(--sea) 65%, var(--brown));
+  height: 100vh;
+  width: 100vw;
 }
